@@ -4,15 +4,13 @@
 
     <code><pre>{{ $gtm.options }}</pre></code>
 
-    <button @click="triggerEvent">
+    <button data-test="track-event" @click="triggerEvent">
       trackEvent
     </button>
 
-    <button @click="triggerView">
+    <button data-test="track-view" @click="triggerView">
       triggerView
     </button>
-
-    {{ dataLayer }}
   </div>
 </template>
 
@@ -31,6 +29,4 @@ function triggerEvent () {
 function triggerView () {
   gtm?.trackView('Home', '/')
 }
-
-const dataLayer = computed(() => window?.dataLayer)
 </script>
