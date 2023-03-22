@@ -8,7 +8,7 @@
       Options
     </h2>
 
-    <code><pre>{{ $gtm.options }}</pre></code>
+    <code><pre>{{ gtmOptions }}</pre></code>
 
     <h2>
       Actions
@@ -32,7 +32,7 @@
 
 <script lang="ts" setup>
 import { type DataLayerObject, useGtm } from '@gtm-support/vue-gtm'
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 
 const gtm = useGtm()
 
@@ -56,5 +56,7 @@ function triggerView () {
 
   dataLayerPayload.value = gtm?.dataLayer()
 }
+
+const gtmOptions = computed(() => gtm?.options)
 
 </script>
