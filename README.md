@@ -108,7 +108,7 @@ Example:
 
 ## Modules options
 
-The modules inherits the options of the plugin [@gtm-support/vue-gtm](https://github.com/gtm-support/vue-gtm#configuration), expect `vueRouter` entry replaced by `enableRouterSync`.
+The modules inherits the options of the plugin [@gtm-support/vue-gtm](https://github.com/gtm-support/vue-gtm#configuration), except `vueRouter` entry replaced by `enableRouterSync`.
 
 ```ts
 type ModuleOptions = {
