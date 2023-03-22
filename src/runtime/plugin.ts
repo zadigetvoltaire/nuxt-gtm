@@ -6,12 +6,16 @@ import type { ModuleOptions } from '../module'
 import gtmOptions from '#gtm'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const options = gtmOptions as ModuleOptions
+  if (process.client) {
+    const options = gtmOptions as ModuleOptions
 
-  const pluginOptions: VueGtmUseOptions = {
-    ...options,
-    vueRouter: options.enableRouterSync && nuxtApp.$router ? nuxtApp.$router as Router : undefined
+    const pluginOptions: VueGtmUseOptions = {
+      ...options,
+      vueRouter: options.enableRouterSync && nuxtApp.$router ? nuxtApp.$router as Router : undefined
+    }
+
+    console.log('pluginOptions', pluginOptions)
+
+    nuxtApp.vueApp.use(createGtm(pluginOptions))
   }
-
-  nuxtApp.vueApp.use(createGtm(pluginOptions))
 })
