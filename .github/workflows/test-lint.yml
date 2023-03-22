@@ -7,8 +7,8 @@ on:
     paths:
       - ".github/workflows/test-lint.yml"
   pull_request:
-    paths:
-      - "*"
+    branches:
+      - main
 
 jobs:
   test-lint:
