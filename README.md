@@ -1,11 +1,10 @@
-<!--
-Get your module up and running quickly.
-
-Find and replace all on all files (CMD+SHIFT+F):
-- Name: Nuxt GTM
-- Package name: @zadigetvoltaire/nuxt-gtm
-- Description: My new Nuxt module
--->
+<div align="center">
+	<br>
+	<a href="https://zadig-et-voltaire.com/">
+		<img src="assets/zadigetvoltaire-logo.svg" width="400" height="100" alt="Click to see the source">
+	</a>
+	<br>
+</div>
 
 # Nuxt GTM
 
@@ -108,7 +107,7 @@ Example:
 
 ## Modules options
 
-The modules inherits the options of the plugin [@gtm-support/vue-gtm](https://github.com/gtm-support/vue-gtm#configuration), except `vueRouter` entry replaced by `enableRouterSync`.
+The modules inherit the options of the plugin [@gtm-support/vue-gtm](https://github.com/gtm-support/vue-gtm#configuration), except `vueRouter` entry replaced by `enableRouterSync`.
 
 ```ts
 type ModuleOptions = {
@@ -258,6 +257,9 @@ This command will:
 pnpm release
 ```
 
+---
+
+Powered by Zadig&Voltaire ©
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/@zadigetvoltaire/nuxt-gtm/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
