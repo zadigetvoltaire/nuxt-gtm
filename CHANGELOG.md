@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/zadigetvoltaire/nuxt-gtm/compare/v0.0.3...v0.0.4)
+
+
+### 🚀 Enhancements
+
+  - Implementation of the useGtm composable directly in the module to take advantage of auto import ([5c6cb1c](https://github.com/zadigetvoltaire/nuxt-gtm/commit/5c6cb1c))
+
+### 📖 Documentation
+
+  - Add logo and zv mentions in README ([26f9419](https://github.com/zadigetvoltaire/nuxt-gtm/commit/26f9419))
+
+### ❤️  Contributors
+
+- LouisMazel <mazuel.loic@gmail.com>
+
 ## v0.0.3
 
 [compare changes](https://github.com/zadigetvoltaire/nuxt-gtm/compare/v0.0.2...v0.0.3)
