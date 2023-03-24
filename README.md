@@ -69,8 +69,6 @@ Please refer to the [@gtm-support/vue-gtm documentation](https://github.com/gtm-
 
 ## Composition API - useGtm composable
 
-Use the composable [useGtm of @gtm-support/vue-gtm](https://github.com/gtm-support/vue-gtm#using-with-composition-api)
-
 Example:
 
 ```vue
@@ -84,9 +82,7 @@ Example:
 </template>
 
 <script lang="ts" setup>
-  import { useGtm } from '@gtm-support/vue-gtm'
-
-  const gtm = useGtm()
+  const gtm = useGtm() // auto-imported by the module
 
   function triggerEvent() {
     gtm.trackEvent({
@@ -103,6 +99,25 @@ Example:
     gtm.trackView('Home', '/')
   }
 </script>
+```
+
+## Options API
+
+```ts
+export default {
+  methods: {
+    triggerEvent() {
+      this.$gtm.trackEvent({
+        event: 'event name',
+        category: 'category',
+        action: 'click',
+        label: 'My custom component trigger',
+        value: 5000,
+        noninteraction: false,
+      })
+    }
+  }
+}
 ```
 
 ## Modules options
