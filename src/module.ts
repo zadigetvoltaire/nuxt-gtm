@@ -1,5 +1,5 @@
 import { type VueGtmUseOptions } from '@gtm-support/vue-gtm'
-import { defineNuxtModule, addPlugin, createResolver, addTemplate } from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, createResolver, addTemplate, addImports } from '@nuxt/kit'
 import { setupDevToolsUI } from './devtools'
 
 // Module options TypeScript interface definition
@@ -36,6 +36,12 @@ export default defineNuxtModule<ModuleOptions>({
 
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addPlugin(resolver.resolve('./runtime/plugin'))
+
+    addImports({
+      name: 'useGtm',
+      as: 'useGtm',
+      from: resolver.resolve('./runtime/composable')
+    })
 
     if (options.devtools) {
       setupDevToolsUI(nuxt, resolver)
