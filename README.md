@@ -274,7 +274,7 @@ pnpm release
 
 ---
 
-Powered by Zadig&Voltaire ©
+© Zadig&Voltaire is a registered trademark of ZV FRANCE
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/@zadigetvoltaire/nuxt-gtm/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
