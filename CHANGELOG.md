@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v0.0.5
+
+[compare changes](https://github.com/zadigetvoltaire/nuxt-gtm/compare/v0.0.4...v0.0.5)
+
+
+### 💅 Refactors
+
+  - Add zadig&voltaire mentions in devtools view ([f83c50a](https://github.com/zadigetvoltaire/nuxt-gtm/commit/f83c50a))
+
+### 🏡 Chore
+
+  - Add logo svg ([9b9f1a2](https://github.com/zadigetvoltaire/nuxt-gtm/commit/9b9f1a2))
+  - Replace ZV mention ([8812ade](https://github.com/zadigetvoltaire/nuxt-gtm/commit/8812ade))
+
+### ❤️  Contributors
+
+- LouisMazel <me@loicmazuel.com>
+
 ## v0.0.4
 
 [compare changes](https://github.com/zadigetvoltaire/nuxt-gtm/compare/v0.0.3...v0.0.4)
