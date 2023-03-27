@@ -8,28 +8,23 @@ const moduleOptions = nuxtConfig?.gtm
 </script>
 
 <template>
-  <div class="relative p-10 n-bg-base flex flex-col h-screen">
+  <div class="relative p-5 n-bg-base flex flex-col">
     <h1 class="text-3xl font-bold">
       Nuxt GTM
     </h1>
 
-    <p class="opacity-50 mb-4">
+    <span class="opacity-50">
       By Zadig&voltaire ©
-    </p>
+    </span>
+
+    <div class="w-full bg-green opacity-50 h-0.5 my-2" />
+
+    <ModuleAuthorNote />
 
     <div
       v-if="client"
       class="flex flex-col gap-2 h-full"
     >
-      <NTip
-        n="green"
-        icon="carbon-checkmark"
-      >
-        Nuxt DevTools is connected
-      </NTip>
-
-      <div class="w-full bg-green opacity-50 h-0.5 my-2" />
-
       <OptionTable v-if="moduleOptions" :options="moduleOptions" class="my-2" />
 
       <div>
