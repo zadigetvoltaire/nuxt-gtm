@@ -13,9 +13,9 @@ const moduleOptions = nuxtConfig?.gtm
       Nuxt GTM
     </h1>
 
-    <div class="opacity-50 mb-4">
-      Nuxt DevTools Integration
-    </div>
+    <p class="opacity-50 mb-4">
+      By Zadig&voltaire ©
+    </p>
 
     <div
       v-if="client"
