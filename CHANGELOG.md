@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.0.6
+
+[compare changes](https://github.com/zadigetvoltaire/nuxt-gtm/compare/v0.0.5...v0.0.6)
+
+
+### 💅 Refactors
+
+  - Add documentation link in devtools view ([1c8c0da](https://github.com/zadigetvoltaire/nuxt-gtm/commit/1c8c0da))
+
+### ❤️  Contributors
+
+- LouisMazel <me@loicmazuel.com>
+
 ## v0.0.5
 
 [compare changes](https://github.com/zadigetvoltaire/nuxt-gtm/compare/v0.0.4...v0.0.5)
