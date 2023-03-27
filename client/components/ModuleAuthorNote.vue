@@ -4,7 +4,7 @@
     class="py-4"
   >
     Documentation available in the <NLink
-      href="https://github.com/zadigetvoltaire/nuxt-gtm/blob/main/README.md"
+      href="https://github.com/zadigetvoltaire/nuxt-gtm#readme"
       target="_blank"
     >
       README.me
