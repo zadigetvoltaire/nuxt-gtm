@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.0.7
+
+[compare changes](https://github.com/zadigetvoltaire/nuxt-gtm/compare/v0.0.6...v0.0.7)
+
+
+### 🏡 Chore
+
+  - Upgrade dependencies ([da19d18](https://github.com/zadigetvoltaire/nuxt-gtm/commit/da19d18))
+
+### ❤️  Contributors
+
+- LouisMazel <me@loicmazuel.com>
+
 ## v0.0.6
 
 [compare changes](https://github.com/zadigetvoltaire/nuxt-gtm/compare/v0.0.5...v0.0.6)
