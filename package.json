@@ -32,6 +32,7 @@
   "dependencies": {
     "@gtm-support/vue-gtm": "^2.0.0",
     "@nuxt/kit": "^3.3.2",
+    "defu": "^6.1.2",
     "sirv": "^2.0.2"
   },
   "peerDependencies": {
