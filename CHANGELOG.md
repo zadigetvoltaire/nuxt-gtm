@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.0.9
+
+[compare changes](https://undefined/undefined/compare/v0.0.8...v0.0.9)
+
+
+### 🏡 Chore
+
+  - Upgrade dependencies ([999fb9f](https://undefined/undefined/commit/999fb9f))
+
+### ❤️  Contributors
+
+- LouisMazel <me@loicmazuel.com>
+
 ## v0.0.8
 
 [compare changes](https://github.com/zadigetvoltaire/nuxt-gtm/compare/v0.0.7...v0.0.8)
