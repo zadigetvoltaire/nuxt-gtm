@@ -32,6 +32,7 @@
   "dependencies": {
     "@gtm-support/vue-gtm": "^2.0.0",
     "@nuxt/kit": "^3.3.2",
+    "defu": "^6.1.2",
     "sirv": "^2.0.2"
   },
   "peerDependencies": {
@@ -49,7 +50,6 @@
     "changelogen": "^0.5.1",
     "concurrently": "^7.6.0",
     "cross-env": "^7.0.3",
-    "defu": "^6.1.2",
     "eslint": "^8.34.0",
     "eslint-plugin-sonarjs": "^0.19.0",
     "eslint-plugin-unicorn": "^46.0.0",
