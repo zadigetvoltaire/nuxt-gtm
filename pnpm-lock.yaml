@@ -14,6 +14,7 @@ specifiers:
   changelogen: ^0.5.1
   concurrently: ^7.6.0
   cross-env: ^7.0.3
+  defu: ^6.1.2
   eslint: ^8.34.0
   eslint-plugin-sonarjs: ^0.19.0
   eslint-plugin-unicorn: ^46.0.0
@@ -38,6 +39,7 @@ devDependencies:
   changelogen: 0.5.1
   concurrently: 7.6.0
   cross-env: 7.0.3
+  defu: 6.1.2
   eslint: 8.36.0
   eslint-plugin-sonarjs: 0.19.0_eslint@8.36.0
   eslint-plugin-unicorn: 46.0.0_eslint@8.36.0

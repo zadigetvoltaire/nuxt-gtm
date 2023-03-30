@@ -36,11 +36,23 @@ npm install --save-dev @zadigetvoltaire/nuxt-gtm
 
 2. Add `@zadigetvoltaire/nuxt-gtm` to the `modules` section of `nuxt.config.ts`
 
-```js
+```ts
 export default defineNuxtConfig({
   modules: [
     '@zadigetvoltaire/nuxt-gtm'
   ],
+})
+```
+
+3. Add configuration in `nuxtConfig.gtm` or in `nuxtConfig.runtimeConfig.public.gtm`
+
+This module supports 2 ways of configuration:
+- Directly in key `gtm` of the Nuxt config
+- In public runtimeConfig: useful to override the config with environment variables and handle multiple environments
+
+```ts
+export default defineNuxtConfig({
+  ...
   gtm: {
     id: 'GTM-xxxxxx', // Your GTM single container ID, array of container ids ['GTM-xxxxxx', 'GTM-yyyyyy'] or array of objects [{id: 'GTM-xxxxxx', queryParams: { gtm_auth: 'abc123', gtm_preview: 'env-4', gtm_cookies_win: 'x'}}, {id: 'GTM-yyyyyy', queryParams: {gtm_auth: 'abc234', gtm_preview: 'env-5', gtm_cookies_win: 'x'}}], // Your GTM single container ID or array of container ids ['GTM-xxxxxx', 'GTM-yyyyyy']
     queryParams: {
@@ -59,6 +71,29 @@ export default defineNuxtConfig({
     ignoredViews: ['homepage'], // Don't trigger events for specified router names (optional)
     trackOnNextTick: false, // Whether or not call trackView in Vue.nextTick
     devtools: true, // (optional)
+  }
+  ...
+  runtimeConfig: {
+    public: {
+      gtm: {
+        id: 'GTM-xxxxxx',
+        queryParams: {
+          gtm_auth: 'AB7cDEf3GHIjkl-MnOP8qr',
+          gtm_preview: 'env-4',
+          gtm_cookies_win: 'x',
+        },
+        defer: false,
+        compatibility: false,
+        nonce: '2726c7f26c',
+        enabled: true,
+        debug: true,
+        loadScript: true,
+        enableRouterSync: true,
+        ignoredViews: ['homepage'],
+        trackOnNextTick: false,
+        devtools: true,
+      }
+    }
   }
 })
 ```
@@ -127,13 +162,16 @@ The modules inherit the options of the plugin [@gtm-support/vue-gtm](https://git
 ```ts
 type ModuleOptions = {
   // SPECIFIC MODULES OPTIONS
-  enableRouterSync?: boolean
   /**
    * Enable Nuxt Devtools integration
    *
    * @default true
    */
   devtools: boolean
+  /**
+   * Synchronise GTM with NuxtRouter
+   */
+  enableRouterSync?: boolean
 
   // PLUGIN AND MODULE OPTIONS
 

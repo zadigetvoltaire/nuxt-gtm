@@ -4,7 +4,7 @@ import { useDevtoolsClient } from '@nuxt/devtools-kit/iframe-client'
 const client = useDevtoolsClient()
 
 const nuxtConfig = await client.value?.devtools.rpc.getServerConfig()
-const moduleOptions = nuxtConfig?.gtm
+const moduleOptions = nuxtConfig?.runtimeConfig.public.gtm
 </script>
 
 <template>
@@ -25,7 +25,17 @@ const moduleOptions = nuxtConfig?.gtm
       v-if="client"
       class="flex flex-col gap-2 h-full"
     >
-      <OptionTable v-if="moduleOptions" :options="moduleOptions" class="my-2" />
+      <div class="flex-1">
+        <OptionTable v-if="moduleOptions" :options="moduleOptions" class="my-2" />
+
+        <template v-else>
+          <NTip n="yellow" class="mt-2">
+            <p>
+              ⚠️ No configuration found
+            </p>
+          </NTip>
+        </template>
+      </div>
 
       <div>
         <NButton
