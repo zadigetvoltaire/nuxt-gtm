@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.0.8
+
+[compare changes](https://github.com/zadigetvoltaire/nuxt-gtm/compare/v0.0.7...v0.0.8)
+
+
+### 🚀 Enhancements
+
+  - Add support of nuxt public runtime config ([874231c](https://github.com/zadigetvoltaire/nuxt-gtm/commit/874231c))
+
+### 🩹 Fixes
+
+  - Build - move defu in dependencies instead of dev dependencies ([a770ed1](https://github.com/zadigetvoltaire/nuxt-gtm/commit/a770ed1))
+
+### ❤️  Contributors
+
+- LouisMazel <me@loicmazuel.com>
+
 ## v0.0.7
 
 [compare changes](https://github.com/zadigetvoltaire/nuxt-gtm/compare/v0.0.6...v0.0.7)

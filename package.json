@@ -1,6 +1,6 @@
 {
   "name": "@zadigetvoltaire/nuxt-gtm",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Nuxt module to add Google Tag Manager",
   "license": "MIT",
   "type": "module",
