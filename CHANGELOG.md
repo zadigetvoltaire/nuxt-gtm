@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.0.10
+
+[compare changes](https://undefined/undefined/compare/v0.0.9...v0.0.10)
+
+
+### 🏡 Chore
+
+  - Downgrade changelogen to 0.5.1 ([abdd000](https://undefined/undefined/commit/abdd000))
+  - Upgrade dependencies ([aa6e9f1](https://undefined/undefined/commit/aa6e9f1))
+  - Update repository url in package.json ([80cad0c](https://undefined/undefined/commit/80cad0c))
+  - Upgrade changelogen dependency ([9d8a52e](https://undefined/undefined/commit/9d8a52e))
+
+### ❤️  Contributors
+
+- LouisMazel <me@loicmazuel.com>
+
 ## v0.0.9
 
 [compare changes](https://undefined/undefined/compare/v0.0.8...v0.0.9)
