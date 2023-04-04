@@ -58,7 +58,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zadigetvoltaire/nuxt-gtm.git"
+    "url": "https://github.com/zadigetvoltaire/nuxt-gtm.git"
   },
   "keywords": [
     "nuxt",
