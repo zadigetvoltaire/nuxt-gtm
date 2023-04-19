@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v0.0.11
+
+[compare changes](https://github.com/zadigetvoltaire/nuxt-gtm/compare/v0.0.10...v0.0.11)
+
+
+### 🏡 Chore
+
+  - Downgrade changelogen to 0.5.1 ([56cf7ec](https://github.com/zadigetvoltaire/nuxt-gtm/commit/56cf7ec))
+  - Upgrade dependencies ([8fa8ca6](https://github.com/zadigetvoltaire/nuxt-gtm/commit/8fa8ca6))
+
+### ❤️  Contributors
+
+- LouisMazel <me@loicmazuel.com>
+
 ## v0.0.10
 
 [compare changes](https://undefined/undefined/compare/v0.0.9...v0.0.10)
