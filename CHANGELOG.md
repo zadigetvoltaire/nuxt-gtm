@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.0.12
+
+[compare changes](https://github.com/zadigetvoltaire/nuxt-gtm/compare/v0.0.11...v0.0.12)
+
+
+### 🩹 Fixes
+
+  - Make devtools option not required ([bba2ff9](https://github.com/zadigetvoltaire/nuxt-gtm/commit/bba2ff9))
+
+### ❤️  Contributors
+
+- LouisMazel <me@loicmazuel.com>
+
 ## v0.0.11
 
 [compare changes](https://github.com/zadigetvoltaire/nuxt-gtm/compare/v0.0.10...v0.0.11)
