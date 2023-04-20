@@ -11,7 +11,7 @@ export interface ModuleOptions extends Omit<VueGtmUseOptions, 'vueRouter'> {
    *
    * @default true
    */
-  devtools: boolean
+  devtools?: boolean
 }
 
 declare module '@nuxt/schema' {

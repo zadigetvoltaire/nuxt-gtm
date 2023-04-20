@@ -167,7 +167,7 @@ type ModuleOptions = {
    *
    * @default true
    */
-  devtools: boolean
+  devtools?: boolean
   /**
    * Synchronise GTM with NuxtRouter
    */
