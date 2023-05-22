@@ -1,20 +1,19 @@
-import { defineNuxtPlugin } from 'nuxt/app'
+
+import { defineNuxtPlugin, useRouter } from 'nuxt/app'
 import { createGtm, type VueGtmUseOptions } from '@gtm-support/vue-gtm'
-import type { ModuleOptions } from '../module'
 // @ts-ignore
-import gtmOptions from '#gtm'
 
-export default defineNuxtPlugin(({ vueApp }) => {
+export default defineNuxtPlugin((nuxt) => {
   if (process.client) {
-    const options = gtmOptions as ModuleOptions
+    const options = nuxt.$config.public.gtm
 
-    const vueRouter = vueApp.$nuxt?.$router
+    const router = useRouter()
 
     const pluginOptions: VueGtmUseOptions = {
       ...options,
-      vueRouter: options.enableRouterSync && vueRouter ? vueRouter : undefined
+      vueRouter: options.enableRouterSync && router ? router as VueGtmUseOptions['vueRouter'] : undefined
     }
 
-    vueApp.use(createGtm(pluginOptions))
+    nuxt.vueApp.use(createGtm(pluginOptions))
   }
 })
