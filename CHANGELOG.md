@@ -1,6 +1,30 @@
 # Changelog
 
 
+## v0.0.13
+
+[compare changes](https://github.com/zadigetvoltaire/nuxt-gtm/compare/v0.0.12...v0.0.13)
+
+
+### 💅 Refactors
+
+  - Use composable useRouter to get nuxt router ([3624f1c](https://github.com/zadigetvoltaire/nuxt-gtm/commit/3624f1c))
+  - Export useGtm composable directly from dependency ([4ff7a85](https://github.com/zadigetvoltaire/nuxt-gtm/commit/4ff7a85))
+
+### 📖 Documentation
+
+  - Update logo in readme ([e08f3f9](https://github.com/zadigetvoltaire/nuxt-gtm/commit/e08f3f9))
+
+### 🏡 Chore
+
+  - Format code ([647fcdf](https://github.com/zadigetvoltaire/nuxt-gtm/commit/647fcdf))
+  - Remove commented code ([7d74054](https://github.com/zadigetvoltaire/nuxt-gtm/commit/7d74054))
+  - Upgrade dependencies ([0de6f85](https://github.com/zadigetvoltaire/nuxt-gtm/commit/0de6f85))
+
+### ❤️  Contributors
+
+- LouisMazel <me@loicmazuel.com>
+
 ## v0.0.12
 
 [compare changes](https://github.com/zadigetvoltaire/nuxt-gtm/compare/v0.0.11...v0.0.12)
