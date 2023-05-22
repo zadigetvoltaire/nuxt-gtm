@@ -1,5 +1,5 @@
 import { type VueGtmUseOptions } from '@gtm-support/vue-gtm'
-import { defineNuxtModule, addPlugin, createResolver, addTemplate, addImports } from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, createResolver, addImports } from '@nuxt/kit'
 import { defu } from 'defu'
 import { setupDevToolsUI } from './devtools'
 
@@ -17,6 +17,12 @@ export interface ModuleOptions extends Omit<VueGtmUseOptions, 'vueRouter'> {
 declare module '@nuxt/schema' {
   interface PublicRuntimeConfig {
     gtm: ModuleOptions
+  }
+  interface NuxtConfig {
+    gtm?: ModuleOptions
+  }
+  interface NuxtOptions {
+    gtm?: ModuleOptions
   }
 }
 
@@ -39,19 +45,13 @@ export default defineNuxtModule<ModuleOptions>({
 
     nuxt.options.runtimeConfig.public.gtm = moduleOptions
 
-    nuxt.options.alias['#gtm'] = addTemplate({
-      filename: 'gtm.mjs',
-      write: true,
-      getContents: () => `export default ${JSON.stringify(moduleOptions, undefined, 2)}`
-    }).dst || ''
-
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addPlugin(resolver.resolve('./runtime/plugin'))
 
     addImports({
       name: 'useGtm',
       as: 'useGtm',
-      from: resolver.resolve('./runtime/composable')
+      from: '@gtm-support/vue-gtm'
     })
 
     if (options.devtools) {
