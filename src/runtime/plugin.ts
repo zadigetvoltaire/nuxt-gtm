@@ -7,6 +7,10 @@ export default defineNuxtPlugin((nuxt) => {
   if (process.client) {
     const options = nuxt.$config.public.gtm
 
+    if (!options.id) {
+      return
+    }
+    
     const router = useRouter()
 
     const pluginOptions: VueGtmUseOptions = {
