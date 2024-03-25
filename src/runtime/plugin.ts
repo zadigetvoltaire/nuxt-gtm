@@ -4,7 +4,7 @@ import { createGtm, type VueGtmUseOptions } from '@gtm-support/vue-gtm'
 // @ts-ignore
 
 export default defineNuxtPlugin((nuxt) => {
-  if (process.client) {
+  if (import.meta.client) {
     const options = nuxt.$config.public.gtm
 
     const router = useRouter()
