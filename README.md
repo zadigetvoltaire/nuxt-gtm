@@ -24,14 +24,7 @@
 1. Add `@zadigetvoltaire/nuxt-gtm` dependency to your project
 
 ```bash
-# Using pnpm
-pnpm add -D @zadigetvoltaire/nuxt-gtm
-
-# Using yarn
-yarn add --dev @zadigetvoltaire/nuxt-gtm
-
-# Using npm
-npm install --save-dev @zadigetvoltaire/nuxt-gtm
+npx nuxi@latest module add nuxt-gtm
 ```
 
 2. Add `@zadigetvoltaire/nuxt-gtm` to the `modules` section of `nuxt.config.ts`
