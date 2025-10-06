@@ -30,7 +30,7 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@gtm-support/vue-gtm": "^2.0.0",
+    "@gtm-support/vue-gtm": "^2.2.0",
     "@nuxt/kit": "^3.5.1",
     "defu": "^6.1.2",
     "sirv": "^2.0.3"
